@@ -17,15 +17,15 @@ def naudotiSkaiciuotuva() :
 
     if operacija == "+" :
         return skaicius + ivestiAntra()
-    elif operacija == "-" :
+    if operacija == "-" :
         return skaicius - ivestiAntra()
-    elif operacija == "/" :
+    if operacija == "/" :
         return skaicius - ivestiAntra()
-    elif operacija == "*" :
+    if operacija == "*" :
         return skaicius * ivestiAntra()
-    elif operacija == "^" :
+    if operacija == "^" :
         return skaicius ** ivestiAntra()
-    elif operacija == "q" :
+    if operacija == "q" :
         return skaicius ** 0.5
     else :
         print("Operacija negalima, bandykite dar karta.")
