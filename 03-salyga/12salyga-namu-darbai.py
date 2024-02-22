@@ -19,8 +19,8 @@ def naudotiSkaiciuotuva() :
         return skaicius + ivestiAntra()
     if operacija == "-" :
         return skaicius - ivestiAntra()
-    if operacija == "/" :
-        return skaicius - ivestiAntra()
+    if operacija == "/" and ivestiAntra() > 0:
+        return skaicius / ivestiAntra()
     if operacija == "*" :
         return skaicius * ivestiAntra()
     if operacija == "^" :
