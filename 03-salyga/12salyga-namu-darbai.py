@@ -7,26 +7,29 @@
 # 5. Gaunamas rezultatas
 # Naudoti tiesini algoritma, salygas ir funkcijas
 
+import math
+
 def naudotiSkaiciuotuva() :
     skaicius = int(input("Iveskite skaiciu: "))
     operacija = input("Iveskite operacija: ")
 
     def ivestiAntra():
-        skaiciusDu = int(input("iveskite antra skaiciu: "))
-        return skaiciusDu
+        return int(input("iveskite antra skaiciu: ")) 
 
     if operacija == "+" :
         return skaicius + ivestiAntra()
     if operacija == "-" :
         return skaicius - ivestiAntra()
-    if operacija == "/" and ivestiAntra() > 0:
-        return skaicius / ivestiAntra()
+    if operacija == "/":
+        antrasSkaicius = ivestiAntra()
+        if antrasSkaicius != 0:
+            return skaicius / antrasSkaicius
     if operacija == "*" :
         return skaicius * ivestiAntra()
     if operacija == "^" :
         return skaicius ** ivestiAntra()
     if operacija == "q" and skaicius >= 0:
-        return skaicius ** 0.5
+        return math.sqrt(skaicius)
     else :
         print("Operacija negalima, bandykite dar karta.")
         return naudotiSkaiciuotuva()
