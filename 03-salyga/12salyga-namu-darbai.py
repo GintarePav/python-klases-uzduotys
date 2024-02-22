@@ -25,7 +25,7 @@ def naudotiSkaiciuotuva() :
         return skaicius * ivestiAntra()
     if operacija == "^" :
         return skaicius ** ivestiAntra()
-    if operacija == "q" :
+    if operacija == "q" and skaicius >= 0:
         return skaicius ** 0.5
     else :
         print("Operacija negalima, bandykite dar karta.")
