@@ -8,5 +8,42 @@
 # povandeniniai akmenys: 
     # dalyba is 0 
     # saknis is neigiamo
-# jei traukiam sakni, antro skaiciaus nereikia
+# jei traukiam sakni, antro skaiciaus neprasom
 # nekartoti kodo!!!
+
+import math
+
+def naudotiSkaiciuotuva():
+    skaicius = int(input("Iveskite skaiciu: "))
+    operacija = input("Iveskite operacija: ")
+
+    def antrasSkaicius():
+        return int(input("Iveskite antra skaiciu: "))
+    
+    if operacija == "q" and skaicius >= 0:
+        rezultatas = math.sqrt(skaicius)
+        print(f"Is {skaicius} istraukus sakni gauname {rezultatas}")
+    elif operacija in ("+", "-", "*", "^", "/"):
+        antrasSkaicius = antrasSkaicius()
+        match operacija :
+            case "+" :
+                rezultatas = skaicius + antrasSkaicius
+            case "-" :
+                rezultatas = skaicius - antrasSkaicius
+            case "*" :
+                rezultatas = skaicius * antrasSkaicius
+            case "/":
+                if antrasSkaicius != 0:
+                    rezultatas = skaicius / antrasSkaicius
+                else: 
+                    print("Operacija neegzistuoja")
+                    return naudotiSkaiciuotuva()
+            case "^" :
+                rezultatas = skaicius ** antrasSkaicius
+        print(f"{skaicius} {operacija} {antrasSkaicius} = {rezultatas}")
+    else : 
+        print("Operacija neegzistuoja")
+        return naudotiSkaiciuotuva()
+    
+skaiciuotuvas = naudotiSkaiciuotuva()
+
