@@ -11,3 +11,6 @@ h = x.copy() #cia irgi kopija, taip pat kaip x[:]
 
 del x[0]
 print(x)
+a = [1, 2, 3]
+x.extend(a)
+print(x)
