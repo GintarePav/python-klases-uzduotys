@@ -1,0 +1,12 @@
+Vienas zaidejas ivede varda a
+Kitas zaidejas ivede varda b
+Zaidima pradeda a. Jis bus vadinamas pirmuoju zaideju.
+Pirmas zaidejas ima 3 lazdeliu.
+Lieka 7 lazdeliu.
+Pirmas zaidejas ima 3 lazdeliu.
+Lieka 4 lazdeliu.
+Pirmas zaidejas ima 3 lazdeliu.
+Lieka 1 lazdeliu.
+Pirmas zaidejas ima 3 lazdeliu.
+Lieka -2 lazdeliu.
+Paskutine lazdele paeme Antrasis zaidejas. Zaidima laimejo Pirmasis zaidejas.
