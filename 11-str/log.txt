@@ -1,0 +1,3 @@
+Pirmos bylos duomenys
+Antros bylos duomenys
+['duom 3.txt']
